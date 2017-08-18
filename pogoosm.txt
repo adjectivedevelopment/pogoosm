@@ -1,3 +1,4 @@
+[date:"2017-01-22T00:00:00Z"]
 [out:json][timeout:60][bbox:{{bbox}}];
   //Define All Map Features
   
