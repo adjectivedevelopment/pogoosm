@@ -1,0 +1,568 @@
+[out:json][timeout:60][bbox:{{bbox}}];
+  //basin
+  (way["landuse"="basin"];
+  rel["landuse"="basin"];
+  node["landuse"="basin"];
+  )->.basin;
+  
+  //canal
+  (way["waterway"="canal"];
+  rel["waterway"="canal"];
+  node["waterway"="canal"];
+  )->.canal;
+  
+  //cemetery
+  (way["landuse"="cemetery"];
+  rel["landuse"="cemetery"];
+  node["landuse"="cemetery"];
+  way["amenity"="grave_yard"];
+  rel["amenity"="grave_yard"];
+  node["amenity"="grave_yard"];
+  )->.cemetery;
+  
+  //cinema
+  (way["amenity"="cinema"];
+  rel["amenity"="cinema"];
+  node["amenity"="cinema"];
+  )->.cinema;
+  
+  //college
+  (way["amenity"="college"];
+  rel["amenity"="college"];
+  node["amenity"="college"];
+  )->.college;
+  
+  //commercial
+  (way["landuse"="commercial"];
+  rel["landuse"="commercial"];
+  node["landuse"="commercial"];
+  )->.commercial;
+  
+  //common
+  (way["leisure"="common"];
+  rel["leisure"="common"];
+  node["leisure"="common"];
+  )->.common;
+  
+  //dam
+  (way["waterway"="dam"];
+  rel["waterway"="dam"];
+  node["waterway"="dam"];
+  )->.dam;
+  
+  //ditch
+  (way["waterway"="ditch"];
+  rel["waterway"="ditch"];
+  node["waterway"="ditch"];
+  )->.ditch;
+  
+  //dock
+  (way["waterway"="dock"];
+  rel["waterway"="dock"];
+  node["waterway"="dock"];
+  )->.dock;
+  
+  //drain
+  (way["waterway"="drain"];
+  rel["waterway"="drain"];
+  node["waterway"="drain"];
+  )->.drain;
+  
+  //farm
+  (way["building"="farm"];
+  rel["building"="farm"];
+  node["building"="farm"];
+  )->.farm;
+  
+  //farmland
+  (way["landuse"="farmland"];
+  rel["landuse"="farmland"];
+  node["landuse"="farmland"];
+  )->.farmland;
+  
+  //farmyard
+  (way["landuse"="farmyard"];
+  rel["landuse"="farmyard"];
+  node["landuse"="farmyard"];
+  )->.farmyard;
+  
+  //footway
+  (way["highway"="footway"];
+  rel["highway"="footway"];
+  node["highway"="footway"];
+  )->.footway;
+  
+  //forest
+  (way["landuse"="forest"];
+  rel["landuse"="forest"];
+  node["landuse"="forest"];
+  )->.forest;
+  
+  //garden
+  (way["leisure"="garden"];
+  rel["leisure"="garden"];
+  node["leisure"="garden"];
+  )->.garden;
+  
+  //glacier
+  (way["natural"="glacier"];
+  rel["natural"="glacier"];
+  node["natural"="glacier"];
+  )->.glacier;
+  
+  //golf_course
+  (way["leisure"="golf_course"];
+  rel["leisure"="golf_course"];
+  node["leisure"="golf_course"];
+  )->.golf_course;
+
+  //grass
+  (way["landuse"="grass"];
+  rel["landuse"="grass"];
+  node["landuse"="grass"];
+  )->.grass;
+  
+  //hospital
+  (way["amenity"="hospital"];
+  rel["amenity"="hospital"];
+  node["amenity"="hospital"];
+  )->.hospital;
+  
+  //hotel
+  (way["tourism"="hotel"];
+  rel["tourism"="hotel"];
+  node["tourism"="hotel"];
+  )->.hotel;
+  
+  //industrial
+  (way["landuse"="industrial"];
+  rel["landuse"="industrial"];
+  node["landuse"="industrial"];
+  )->.industrial;
+  
+  //lake
+  (way["natural"="water"];
+  rel["natural"="water"];
+  node["natural"="water"];
+  )->.water;
+  
+  //library
+  (way["amenity"="library"];
+  rel["amenity"="library"];
+  node["amenity"="library"];
+  )->.library;
+
+  //meadow
+  (way["landuse"="meadow"];
+  rel["landuse"="meadow"];
+  node["landuse"="meadow"];
+  )->.meadow;
+  
+  //nature_reserve
+  (way["leisure"="nature_reserve"];
+  rel["leisure"="nature_reserve"];
+  node["leisure"="nature_reserve"];
+  )->.nature_reserve;
+  
+  //park
+  (way["leisure"="park"];
+  rel["leisure"="park"];
+  node["leisure"="park"];
+  )->.park;
+  
+  //parking
+  (way["amenity"="parking"];
+  rel["amenity"="parking"];
+  node["amenity"="parking"];
+  )->.parking;
+  
+  //path
+  (way["highway"="path"];
+  rel["highway"="path"];
+  node["highway"="path"];
+  )->.path;
+  
+  //pedestrian
+  (way["highway"="pedestrian"];
+  rel["highway"="pedestrian"];
+  node["highway"="pedestrian"];
+  )->.pedestrian;
+  
+  //pitch
+  (way["leisure"="pitch"];
+  rel["leisure"="pitch"];
+  node["leisure"="pitch"];
+  )->.pitch;
+  
+  //place_of_worship
+  (way["amenity"="place_of_worship"];
+  rel["amenity"="place_of_worship"];
+  node["amenity"="place_of_worship"];
+  )->.place_of_worship;
+  
+  //playa
+  (way["natural"="beach"];
+  rel["natural"="beach"];
+  node["natural"="beach"];
+  )->.beach;
+  
+  //playground
+  (way["leisure"="playground"];
+  rel["leisure"="playground"];
+  node["leisure"="playground"];
+  )->.playground;
+  
+  //quarry
+  (way["landuse"="quarry"];
+  rel["landuse"="quarry"];
+  node["landuse"="quarry"];
+  )->.quarry;
+  
+  //railway
+  (way["landuse"="railway"];
+  rel["landuse"="railway"];
+  node["landuse"="railway"];
+  )->.railway;
+  
+  //recreation_area
+  (way["landuse"="recreation_ground"];
+  rel["landuse"="recreation_ground"];
+  node["landuse"="recreation_ground"];
+  )->.recreation_ground;
+  
+  //reservoir
+  (way["landuse"="reservoir"];
+  rel["landuse"="reservoir"];
+  node["landuse"="reservoir"];
+  )->.reservoir;
+  
+  //resedential
+  (way["landuse"="resedential"];
+  rel["landuse"="resedential"];
+  node["landuse"="resedential"];
+  )->.resedential;
+  
+  //retail
+  (way["landuse"="retail"];
+  rel["landuse"="retail"];
+  node["landuse"="retail"];
+  )->.retail;
+  
+  //river
+  (way["waterway"="river"];
+  rel["waterway"="river"];
+  node["waterway"="river"];
+  )->.river;
+  
+  //riverbank
+  (way["waterway"="riverbank"];
+  rel["waterway"="riverbank"];
+  node["waterway"="riverbank"];
+  )->.riverbank;
+  
+  //runway
+  (way["aeroway"="runway"];
+  rel["aeroway"="runway"];
+  node["aeroway"="runway"];
+  )->.runway;
+  
+  //school
+  (way["amenity"="school"];
+  rel["amenity"="school"];
+  node["amenity"="school"];
+  )->.school;
+  
+  //sports_center
+  (way["leisure"="sports_centre"];
+  rel["leisure"="sports_centre"];
+  node["leisure"="sports_centre"];
+  )->.sports_centre;
+  
+  //stadium
+  (way["leisure"="stadium"];
+  rel["leisure"="stadium"];
+  node["leisure"="stadium"];
+  )->.stadium;
+  
+  //stream
+  (way["waterway"="stream"];
+  rel["waterway"="stream"];
+  node["waterway"="stream"];
+  )->.stream;
+  
+  //taxiway
+  (way["aeroway"="taxiway"];
+  rel["aeroway"="taxiway"];
+  node["aeroway"="taxiway"];
+  )->.taxiway;
+  
+  //theatre
+  (way["amenity"="theatre"];
+  rel["amenity"="theatre"];
+  node["amenity"="theatre"];
+  )->.theatre;
+  
+  //university
+  (way["amenity"="university"];
+  rel["amenity"="university"];
+  node["amenity"="university"];
+  )->.university;
+  
+  //wetland
+  (way["natural"="wetland"];
+  rel["natural"="wetland"];
+  node["natural"="wetland"];
+  )->.wetland;
+  
+  //wood
+  (way["natural"="wood"];
+  rel["natural"="wood"];
+  node["natural"="wood"];
+  )->.wood;
+(
+  way.cemetery;
+  rel.cemetery;
+  node.cemetery;
+  way.college;
+  rel.college;
+  node.college;
+  way.commercial;
+  rel.commercial;
+  node.commercial;
+  way.common;
+  rel.common;
+  node.common;
+  way.farmland;
+  rel.farmland;
+  node.farmland;
+  way.farmyard;
+  rel.farmyard;
+  node.farmyard;
+  way.forest;
+  rel.forest;
+  node.forest;
+  way.golf_course;
+  rel.golf_course;
+  node.golf_course;
+  way.grass;
+  rel.grass;
+  node.grass;
+  way.industrial;
+  rel.industrial;
+  node.industrial;
+  way.water;
+  rel.water;
+  node.water;
+  way.meadow;
+  rel.meadow;
+  node.meadow;
+  way.nature_reserve;
+  rel.nature_reserve;
+  node.nature_reserve;
+  way.park;
+  rel.park;
+  node.park;
+  way.beach;
+  rel.beach;
+  node.beach;
+  way.quarry;
+  rel.quarry;
+  node.quarry;
+  way.resedential;
+  rel.resedential;
+  node.resedential;
+  way.retail;
+  rel.retail;
+  node.retail;
+  way.school;
+  rel.school;
+  node.school;
+  way.university;
+  rel.university;
+  node.university;
+  way.wetland;
+  rel.wetland;
+  node.wetland;
+  way.wood;
+  rel.wood;
+  node.wood;
+);
+out body;
+>;
+out skel qt;
+(
+  way.basin;
+  rel.basin;
+  node.basin;
+  way.canal;
+  rel.canal;
+  node.canal;
+  way.cinema;
+  rel.cinema;
+  node.cinema;
+  way.dam;
+  rel.dam;
+  node.dam;
+  way.ditch;
+  rel.ditch;
+  node.ditch;
+  way.dock;
+  rel.dock;
+  node.dock;
+  way.drain;
+  rel.drain;
+  node.drain;
+  way.farm;
+  rel.farm;
+  node.farm;
+  way.footway;
+  rel.footway;
+  node.footway;
+  way.garden;
+  rel.garden;
+  node.garden;
+  way.glacier;
+  rel.glacier;
+  node.glacier;
+  way.hospital;
+  rel.hospital;
+  node.hospital;
+  way.hotel;
+  rel.hotel;
+  node.hotel;
+  way.library;
+  rel.library;
+  node.library;
+  way.parking;
+  rel.parking;
+  node.parking;
+  way.path;
+  rel.path;
+  node.path;
+  way.pedestrian;
+  rel.pedestrian;
+  node.pedestrian;
+  way.pitch;
+  rel.pitch;
+  node.pitch;
+  way.place_of_worship;
+  rel.place_of_worship;
+  node.place_of_worship;
+  way.playground;
+  rel.playground;
+  node.playground;
+  way.railway;
+  rel.railway;
+  node.railway;
+  way.recreation_ground;
+  rel.recreation_ground;
+  node.recreation_ground;
+  way.reservoir;
+  rel.reservoir;
+  node.reservoir;
+  way.river;
+  rel.river;
+  node.river;
+  way.riverbank;
+  rel.riverbank;
+  node.riverbank;
+  way.runway;
+  rel.runway;
+  node.runway;
+  way.sports_centre;
+  rel.sports_centre;
+  node.sports_centre;
+  way.stadium;
+  rel.stadium;
+  node.stadium;
+  way.stream;
+  rel.stream;
+  node.stream;
+  way.taxiway;
+  rel.taxiway;
+  node.taxiway;
+  way.theatre;
+  rel.theatre;
+  node.theatre;
+);
+out body;
+>;
+out skel qt;
+{{style:
+  way[landuse=basin],area[landuse=basin],node[landuse=basin]{ set .basin;}
+  way[waterway=canal],area[waterway=canal],node[waterway=canal]{ set .canal;}
+  way[landuse=cemetery],area[landuse=cemetery],node[landuse=cemetery],way[amenity=grave_yard],area[amenity=grave_yard],node[amenity=grave_yard]{ set .cemetery;}
+  way[amenity=cinema],area[amenity=cinema],node[amenity=cinema]{ set .cinema;}
+  way[amenity=college],area[amenity=college],node[amenity=college]{ set .college;}
+  way[landuse=commercial],area[landuse=commercial],node[landuse=commercial]{ set .commercial;}
+  way[leisure=common],area[leisure=common],node[leisure=common]{ set .common;}
+  way[waterway=dam],area[waterway=dam],node[waterway=dam]{ set .dam;}
+  way[waterway=ditch],area[waterway=ditch],node[waterway=ditch]{ set .ditch;}
+  way[waterway=dock],area[waterway=dock],node[waterway=dock]{ set .dock;}
+  way[waterway=drain],area[waterway=drain],node[waterway=drain]{ set .drain;}
+  way[building=farm],area[building=farm],node[building=farm]{ set .farm;}
+  way[landuse=farmland],area[landuse=farmland],node[landuse=farmland]{ set .farmland;}
+  way[landuse=farmyard],area[landuse=farmyard],node[landuse=farmyard]{ set .farmyard;}
+  way[highway=footway],area[highway=footway],node[highway=footway]{ set .footway;}
+  way[landuse=forest],area[landuse=forest],node[landuse=forest]{ set .forest;}
+  way[leisure=garden],area[leisure=garden],node[leisure=garden]{ set .garden;}
+  way[natural=glacier],area[natural=glacier],node[natural=glacier]{ set .glacier;}
+  way[leisure=golf_course] ,area[leisure=golf_course] ,node[leisure=golf_course] { set .golf_course;}
+  way[landuse=grass],area[landuse=grass],node[landuse=grass]{ set .grass;}
+  way[amenity=hospital],area[amenity=hospital],node[amenity=hospital]{ set .hospital;}
+  way[tourism=hotel],area[tourism=hotel],node[tourism=hotel]{ set .hotel;}
+  way[landuse=industrial],area[landuse=industrial],node[landuse=industrial]{ set .industrial;}
+  way[natural=water],area[natural=water],node[natural=water]{ set .water;}
+  way[amenity=library],area[amenity=library],node[amenity=library]{ set .library;}
+  way[landuse=meadow],area[landuse=meadow],node[landuse=meadow]{ set .meadow;}
+  way[leisure=nature_reserve],area[leisure=nature_reserve],node[leisure=nature_reserve]{ set .nature_reserve;}
+  way[leisure=park],area[leisure=park],node[leisure=park]{ set .park;}
+  way[amenity=parking],area[amenity=parking],node[amenity=parking]{ set .parking;}
+  way[highway=path],area[highway=path],node[highway=path]{ set .path;}
+  way[highway=pedestrian],area[highway=pedestrian],node[highway=pedestrian]{ set .pedestrian;}
+  way[leisure=pitch],area[leisure=pitch],node[leisure=pitch]{ set .pitch;}
+  way[amenity=place_of_worship],area[amenity=place_of_worship],node[amenity=place_of_worship]{ set .place_of_worship;}
+  way[natural=beach],area[natural=beach],node[natural=beach]{ set .beach;}
+  way[leisure=playground],area[leisure=playground],node[leisure=playground]{ set .playground;}
+  way[landuse=quarry],area[landuse=quarry],node[landuse=quarry]{ set .quarry;}
+  way[landuse=railway],area[landuse=railway],node[landuse=railway]{ set .railway;}
+  way[landuse=recreation_ground],area[landuse=recreation_ground],node[landuse=recreation_ground]{ set .recreation_ground;}
+  way[landuse=reservoir],area[landuse=reservoir],node[landuse=reservoir]{ set .reservoir;}
+  way[landuse=resedential],area[landuse=resedential],node[landuse=resedential]{ set .resedential;}
+  way[landuse=retail],area[landuse=retail],node[landuse=retail]{ set .retail;}
+  way[waterway=river],area[waterway=river],node[waterway=river]{ set .river;}
+  way[waterway=riverbank],area[waterway=riverbank],node[waterway=riverbank]{ set .riverbank;}
+  way[aeroway=runway],area[aeroway=runway],node[aeroway=runway]{ set .runway;}
+  way[amenity=school],area[amenity=school],node[amenity=school]{ set .school;}
+  way[leisure=sports_centre],area[leisure=sports_centre],node[leisure=sports_centre]{ set .sports_centre;}
+  way[leisure=stadium],area[leisure=stadium],node[leisure=stadium]{ set .stadium;}
+  way[aeroway=taxiway],area[aeroway=taxiway],node[aeroway=taxiway]{ set .taxiway;}
+  way[amenity=theatre],area[amenity=theatre],node[amenity=theatre]{ set .theatre;}
+  way[amenity=university],area[amenity=university],node[amenity=university]{ set .university;}
+  way[natural=wetland],area[natural=wetland],node[natural=wetland]{ set .wetland;}
+  way[natural=wood],area[natural=wood],node[natural=wood]{ set .wood;}
+  area
+{
+  opacity: .95;
+  fill-opacity: .7;
+  color: #000;
+}
+
+node
+{
+  color: #000;
+}
+
+way.path, area.path, node.path, way.footway, area.footway, node.footway, way.pedestrian, area.pedestrian, node.pedestrian, way.runway, node.runway, area.runway, way.taxiway, node.taxiway, area.taxiway, area.railway, node.railway, way.railway { color: #000; fill-color: #000; }
+way.basin, area.basin, node.basin, way.canal, area.canal, node.canal, way.ditch, area.ditch, node.ditch, way.water, area.water, node.water, way.river, area.river, node.river, way.riverbank, area.riverbank, node.riverbank, way.reservoir, node.reservoir, area.reservoir { color: #00F; fill-color: #00F; }
+way.garden, area.garden, node.garden, way.grass, area.grass, node.grass, way.meadow, area.meadow, node.meadow, way.park, node.park, area.park, way.pitch, node.pitch, area.pitch, way.golf_course, node.golf_course, area.golf_course, way.recreation_ground, node.recreation_ground, area.recreation_ground, way.common, node.common, area.common { fill-color: #b0f442; }
+way.forest, node.forest, area.forest, way.wood, node.wood, area.wood {fill-color: #1a4c00; }
+way.wetland, node.wetland, area.wetland, way.nature_reserve, node.nature_reserve, area.nature_reserve {fill-color: #8ee064; }
+way.commercial, node.commercial, area.commercial, way.industrial, node.industrial, area.industrial, area.quarry, node.quarry, way.quarry {fill-color: #656660; }
+way.farm, node.farm, area.farm, way.farmland, node.farmland, area.farmland, way.farmyard, area.farmyard, node.farmyard, way.cemetery, node.cemetery, area.cemetery {fill-color: #5fa554;}
+way.retail, node.retail, area.retail, way.resedential, node.resedential, area.resedential { fill-color: #99896b;}
+way.parking, node.parking, area.parking {fill-color: #b7b5b0;}
+way.cinema, node.cinema, area.cinema, way.hotel, node.hotel, area.hotel, way.hospital, node.hospital, area.hospital, way.library, node.library, area.library, way.place_of_worship, area.place_of_worship, node.place_of_worship, way.playground, area.playground, node.playground, area.sports_centre, way.sports_centre, node.sports_centre, way.stadium, area.stadium, node.stadium {fill-color: #88dbe2;}
+way.college, node.college, area.college, area.university, node.university, way.university, area.school, node.school, way.school {fill-color: #e8e676;}
+node.dam, area.dam, way.dam, node.drain, way.drain, area.drain, node.dock, area.dock, way.dock, node.beach, area.beach, way.beach{fill-color: #8c7b4a;}
+}}
