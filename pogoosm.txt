@@ -497,7 +497,7 @@ out skel qt;
 
 
 {{style:
-//Define all features for styles
+/*Define all features for styles*/
   way[landuse=basin],area[landuse=basin],node[landuse=basin]{ set .basin;}
   way[waterway=canal],area[waterway=canal],node[waterway=canal]{ set .canal;}
   way[landuse=cemetery],area[landuse=cemetery],node[landuse=cemetery],way[amenity=grave_yard],area[amenity=grave_yard],node[amenity=grave_yard]{ set .cemetery;}
@@ -551,7 +551,7 @@ out skel qt;
   way[natural=wetland],area[natural=wetland],node[natural=wetland]{ set .wetland;}
   way[natural=wood],area[natural=wood],node[natural=wood]{ set .wood;}
   
-  //set the opacity of areas to low to make them more clear and outline them in black
+  /*set the opacity of areas to low to make them more clear and outline them in black*/
   area
 {
   opacity: .95;
@@ -559,13 +559,13 @@ out skel qt;
   color: #000;
 }
 
-//outline nodes in black
+/*outline nodes in black*/
 node
 {
   color: #000;
 }
 
-//set individual colors for different groupings of features
+/*set individual colors for different groupings of features*/
 way.path, area.path, node.path, way.footway, area.footway, node.footway, way.pedestrian, area.pedestrian, node.pedestrian, way.runway, node.runway, area.runway, way.taxiway, node.taxiway, area.taxiway, area.railway, node.railway, way.railway { color: #000; fill-color: #000; }
 way.basin, area.basin, node.basin, way.canal, area.canal, node.canal, way.ditch, area.ditch, node.ditch, way.water, area.water, node.water, way.river, area.river, node.river, way.riverbank, area.riverbank, node.riverbank, way.reservoir, node.reservoir, area.reservoir { color: #00F; fill-color: #00F; }
 way.garden, area.garden, node.garden, way.grass, area.grass, node.grass, way.meadow, area.meadow, node.meadow, way.park, node.park, area.park, way.pitch, node.pitch, area.pitch, way.golf_course, node.golf_course, area.golf_course, way.recreation_ground, node.recreation_ground, area.recreation_ground, way.common, node.common, area.common { fill-color: #b0f442; }
