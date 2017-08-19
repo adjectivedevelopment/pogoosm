@@ -451,6 +451,7 @@ way[leisure=playground],area[leisure=playground],node[leisure=playground]{ set .
   way[landuse=retail],area[landuse=retail]{ set .retail;}
   way[waterway=river],area[waterway=river]{ set .river;}
   way[waterway=riverbank],area[waterway=riverbank]{ set .riverbank;}
+way[waterway=stream],area[waterway=stream]{ set .stream;}
  way[leisure=sports_centre],area[leisure=sports_centre],node[leisure=sports_centre]{ set .sports_centre;}
   way[leisure=stadium],area[leisure=stadium],node[leisure=stadium]{ set .stadium;}
   way[amenity=theatre],area[amenity=theatre],node[amenity=theatre]{ set .theatre;}  way[amenity=university],area[amenity=university]{ set .university;}
@@ -472,7 +473,7 @@ node
 
 /*set individual colors for different groupings of features*/
 way.path, area.path, way.footway, area.footway, way.pedestrian, area.pedestrian, { color: #000; fill-color: #000; }
-way.basin, area.basin, way.canal, area.canal, way.ditch, area.ditch, way.water, area.water, way.river, area.river, way.riverbank, area.riverbank, way.reservoir, area.reservoir { color: #00F; fill-color: #00F; }
+way.basin, area.basin, way.canal, area.canal, way.ditch, area.ditch, way.water, area.water, way.river, area.river, way.riverbank, area.riverbank, way.reservoir, area.reservoir, way.stream, area.stream { color: #00F; fill-color: #00F; }
 way.garden, area.garden, node.garden, way.grass, area.grass, way.meadow, area.meadow, way.park, area.park, way.pitch, node.pitch, area.pitch, way.golf_course, area.golf_course, way.recreation_ground, area.recreation_ground, way.common, area.common { fill-color: #b0f442; }
 way.forest, area.forest, way.wood, area.wood {fill-color: #1a4c00; }
 way.nature_reserve, area.nature_reserve {fill-color: #8ee064; }
